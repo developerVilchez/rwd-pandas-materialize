@@ -1,0 +1,129 @@
+/* Variables */
+
+:root {
+  --orange: #fe8b61;
+  --green: #b1e282;
+}
+
+/* Reset */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--orange);
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.padding-1em {
+  padding: 1em;
+}
+
+.mb-2em {
+  margin-bottom: 2em;
+}
+.outline {
+  outline: 3px solid #fff;
+}
+
+/* Titles */
+
+.main-title {
+  font-size: 36px;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  margin-bottom: 20px;
+}
+
+.common-title {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+
+/* First Mobile */
+/* header */
+.header {
+  padding: 6em 2.5em 2em;
+}
+
+/* hero */
+
+.bg-image {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  width: 100%;
+}
+
+.bg-image-medium {
+  height: 220px;
+}
+
+.bg-image-large {
+  height: 330px;  
+}
+
+.bg-image-1 {
+  background-image: url('../assets/images/uno.jpg');
+}
+
+.bg-image-2 {
+  background-image: url('../assets/images/dos.jpg');  
+}
+
+.bg-image-3 {
+  background-image: url('../assets/images/tres.jpg');  
+}
+
+/* about */
+
+.about, .galery {
+  background-color: var(--green);
+  border-top: 20px solid var(--orange);
+  border-bottom: 20px solid var(--orange);
+  padding: 4em;
+}
+
+.about-text {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  background-color: var(--orange);
+
+  }
+
+  /* footer */
+
+.footer {
+  padding: 1em; 
+}
+
+@media (min-width: 768px) {
+  .hero {
+    height: 440px;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero {
+    height: 660px;  
+  }
+  .galery {
+    height: 460px; 
+  }
+}
